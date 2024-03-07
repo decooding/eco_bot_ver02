@@ -47,6 +47,7 @@ digit_map = {
 API_TOKEN = "6232142718:AAGtjHPrJJPfAWGztHk-RzwKiTeMWHH4xFc"
 
 logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
@@ -161,3 +162,5 @@ async def Gis_to_map(message: types.Message):
 
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
+    print("Bot enabled")
+    print(logging.basicConfig(level=logging.INFO))
